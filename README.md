@@ -5,7 +5,7 @@
 ### Hello! <img style="margin: 0 auto" src="https://github.com/ABSphreak/ABSphreak/blob/master/gifs/Hi.gif" height="50"> Welcome to my profile :octocat:
 
 - 🔭 I’m currently studying on C# development
-- 🌱 Learning ASP.NET, Lambda,💙AI
+- 🌱 Learning ASP.NET 💙
 - 📫 How to reach me : [Telegram](https://t.me/BrunnoG92)
 - ⚡ Passionate about new technologies.  
 
