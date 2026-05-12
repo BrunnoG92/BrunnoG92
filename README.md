@@ -63,7 +63,7 @@ foco_atual:
 ## 📊 Estatísticas do GitHub
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=BrunnoG92&theme=react-dark&hide_border=true&bg_color=0d1117&area=true" alt="Activity Graph" width="100%" />
+  <img src="assets/activity-graph.svg" alt="Activity Graph" width="100%" />
 </p>
 
 ### Métricas consolidadas (incluindo repositórios privados)
@@ -114,6 +114,8 @@ foco_atual:
   <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[4].name&label=5%C2%BA&labelColor=0d1117&color=58a6ff&style=for-the-badge" />
   <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[4].pct&suffix=%25&label=&labelColor=58a6ff&color=0d1117&style=flat" />
 </p>
+
+
 
 ---
 
