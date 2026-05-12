@@ -53,12 +53,13 @@ foco_atual:
   <img src="https://img.shields.io/badge/RxJS-B7178C?style=for-the-badge&logo=reactivex&logoColor=white" />
   <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" />
   <img src="https://img.shields.io/badge/PostgreSQL-47A248?style=for-the-badge&logo=PostgreSQL&logoColor=white" />
+  <img src="https://img.shields.io/badge/Metabase-509EE3?style=for-the-badge&logo=metabase&logoColor=white" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" />
+  <img src="https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=white" />
+  <img src="https://img.shields.io/badge/Zabbix-CC0000?style=for-the-badge&logo=zabbix&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" />
-  <img src="https://img.shields.io/badge/Zabbix-CC0000?style=for-the-badge&logo=zabbix&logoColor=white" />
-  <img src="https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=white" />
   <img src="https://img.shields.io/badge/MCP-6e7681?style=for-the-badge" />
 </p>
 
@@ -120,7 +121,7 @@ Minha atuação com IA vai além do consumo de APIs: construo **sistemas agentiv
 |------|-----------|
 | **Agentes Inteligentes** | Assistentes com capacidade de planejamento, uso de ferramentas e tomada de decisão autônoma |
 | **Automação de Processos** | Scripts e robôs que eliminam tarefas manuais repetitivas em operações de TI e negócios |
-| **Integração com LLMs** | Engenharia de prompt, chains, RAG e fine-tuning para cenários corporativos |
+| **Integração com LLMs** | Utilização de IA como apoio na construção de sistemas, automações e otimização de processos |
 | **Análise Inteligente** | Extração, classificação e sumarização automatizada de documentos e dados não estruturados |
 
 ---
