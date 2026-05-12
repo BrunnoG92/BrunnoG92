@@ -103,20 +103,7 @@ foco_atual:
 ### Linguagens mais utilizadas
 
 <p align="center">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[0].name&label=1%C2%BA&labelColor=0d1117&color=58a6ff&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[0].pct&suffix=%25&label=&labelColor=58a6ff&color=0d1117&style=flat" />
-  &nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[1].name&label=2%C2%BA&labelColor=0d1117&color=58a6ff&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[1].pct&suffix=%25&label=&labelColor=58a6ff&color=0d1117&style=flat" />
-  &nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[2].name&label=3%C2%BA&labelColor=0d1117&color=58a6ff&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[2].pct&suffix=%25&label=&labelColor=58a6ff&color=0d1117&style=flat" />
-  <br/>
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[3].name&label=4%C2%BA&labelColor=0d1117&color=58a6ff&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[3].pct&suffix=%25&label=&labelColor=58a6ff&color=0d1117&style=flat" />
-  &nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[4].name&label=5%C2%BA&labelColor=0d1117&color=58a6ff&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[4].pct&suffix=%25&label=&labelColor=58a6ff&color=0d1117&style=flat" />
+  <img src="assets/stats-card.svg" alt="GitHub Stats" width="95%" />
 </p>
 
 

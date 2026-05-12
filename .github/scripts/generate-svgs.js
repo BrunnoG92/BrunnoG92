@@ -94,7 +94,7 @@ function generateActivityGraph(user) {
 // ─── Stats Card SVG ────────────────────────────────────────────────
 
 function generateStatsCard(data) {
-  const w = 460, h = 280;
+  const w = 530, h = 280;
 
   // Top stats row
   const items = [
@@ -107,7 +107,7 @@ function generateStatsCard(data) {
 
   let statsRow = '';
   items.forEach((item, i) => {
-    const x = 15 + (i % 3) * 150;
+    const x = 15 + (i % 3) * 170;
     const y = 35 + Math.floor(i / 3) * 42;
     statsRow += `
     <text x="${x}" y="${y}" fill="#8b949e" font-size="11" font-family="system-ui">${item.label}</text>
@@ -115,7 +115,7 @@ function generateStatsCard(data) {
   });
 
   // Language bars - estilo horizontal comprido
-  const barMaxW = 380;
+  const barMaxW = 370;
   let langsHtml = '';
   data.topLanguages.forEach((lang, i) => {
     const y = 125 + i * 30;
@@ -127,7 +127,7 @@ function generateStatsCard(data) {
     <text x="15" y="${y + 15}" fill="#c9d1d9" font-size="13" font-family="system-ui" font-weight="600">${lang.name}</text>
     <rect x="115" y="${y + 2}" width="${barMaxW}" height="18" rx="4" fill="#21262d" />
     ${bar}
-    <text x="505" y="${y + 15}" fill="#8b949e" font-size="13" font-family="system-ui" text-anchor="end">${lang.pct}%</text>`;
+    <text x="500" y="${y + 15}" fill="#8b949e" font-size="13" font-family="system-ui" text-anchor="end">${lang.pct}%</text>`;
   });
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" style="background:#0d1117;border-radius:6px">
