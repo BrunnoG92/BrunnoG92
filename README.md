@@ -33,7 +33,7 @@ filosofia:
   codigo: "Código é projeto de engenharia — cada camada deve ter uma responsabilidade única, ser testável e evolutiva."
   mentalidade: "Automação não é luxo, é pré-requisito. Se você faz duas vezes, automatize na terceira."
 foco_atual:
-  - Desenvolvimento do OLTMonitorV2 (monitoramento óptico enterprise)
+  - Desenvolvimento do OLTMonitor (monitoramento óptico enterprise)
   - Arquitetura multi-tenant com isolamento LGPD
   - .NET 10 + Angular 21 + Clean Architecture / DDD / CQRS
   - Integração de LLMs em fluxos de produção reais
@@ -63,7 +63,7 @@ foco_atual:
 ## 📊 Estatísticas do GitHub
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=BrunnoG92&theme=dark&hide_border=true" alt="GitHub Streak" width="49%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=BrunnoG92&theme=react-dark&hide_border=true&bg_color=0d1117&area=true" alt="Activity Graph" width="100%" />
 </p>
 
 ### Métricas consolidadas (incluindo repositórios privados)
@@ -115,12 +115,6 @@ foco_atual:
   <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[4].pct&suffix=%25&label=&labelColor=58a6ff&color=0d1117&style=flat" />
 </p>
 
-### Activity Graph
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=BrunnoG92&theme=react-dark&hide_border=true&bg_color=0d1117&area=true" alt="Activity Graph" width="100%" />
-</p>
-
 ---
 
 ## 🤖 Inteligência Artificial & Automação
@@ -140,7 +134,7 @@ Minha atuação com IA vai além do consumo de APIs: construo **sistemas agentiv
 
 ## 🧭 Atualmente estou trabalhando em
 
-### OLTMonitorV2 — Sistema Enterprise de Monitoramento Óptico
+### OLTMonitor — Sistema Enterprise de Monitoramento Óptico
 
 Sistema enterprise de **monitoramento e provisionamento de equipamentos de rede óptica (OLTs)** com suporte a múltiplos fabricantes, utilizado por múltiplas empresas simultaneamente.
 
