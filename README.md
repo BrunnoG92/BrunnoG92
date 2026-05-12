@@ -46,7 +46,7 @@ foco_atual:
 <p align="center">
   <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" />
   <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-  <img src="https://img.shields.io/badge/Angular%2021-0F0F11?style=for-the-badge&logo=angular&logoColor=white" />
+  <img src="assets/angular-badge.svg" alt="Angular 21" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
   <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
@@ -164,7 +164,7 @@ Isolamento de dados por tenant com segurança LGPD — dados sensíveis e estrat
 
 <p align="left">
   <img src="https://img.shields.io/badge/.NET%2010-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-  <img src="https://img.shields.io/badge/Angular%2021-0F0F11?style=for-the-badge&logo=angular&logoColor=white" />
+  <img src="assets/angular-badge.svg" alt="Angular 21" />
   <img src="https://img.shields.io/badge/Clean%20Architecture-6e7681?style=for-the-badge" />
   <img src="https://img.shields.io/badge/DDD-6e7681?style=for-the-badge" />
   <img src="https://img.shields.io/badge/CQRS-6e7681?style=for-the-badge" />
