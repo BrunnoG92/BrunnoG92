@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:58a6ff&height=200&section=header&text=Brunno%20Gomes&fontSize=50&fontColor=ffffff&animation=fadeIn" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:58a6ff&height=200&section=header&text=Brunno%20Gonçalves&fontSize=50&fontColor=ffffff&animation=fadeIn" width="100%" />
 </div>
 
 <br/>
@@ -22,13 +22,13 @@
 ## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30" /> Sobre mim
 
 ```yaml
-nome: Bruno Gomes
+nome: Bruno Gonçalves
 foco: Arquiteto de Soluções & Engenheiro de Software
 stack_principal:
-  - backend:  [C#, .NET, ASP.NET Core, Entity Framework, SQL Server, MongoDB]
+  - backend:  [C#, .NET, ASP.NET Core, Entity Framework, SQL Server, PostgreSQL]
   - frontend: [Angular, TypeScript, Tailwind CSS, RxJS]
   - inteligencia_artificial: [LLMs, OpenAI API, Automação Inteligente, Prompt Engineering]
-  - devops:   [Docker, Azure, GitHub Actions, Linux, Git]
+  - devops:   [GitHub Actions, Linux, Git]
 filosofia:
   codigo: "Código é projeto de engenharia — cada camada deve ter uma responsabilidade única, ser testável e evolutiva."
   mentalidade: "Automação não é luxo, é pré-requisito. Se você faz duas vezes, automatize na terceira."
@@ -52,7 +52,7 @@ foco_atual:
   <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
   <img src="https://img.shields.io/badge/RxJS-B7178C?style=for-the-badge&logo=reactivex&logoColor=white" />
   <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-47A248?style=for-the-badge&logo=PostgreSQL&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
@@ -66,26 +66,65 @@ foco_atual:
 ## 📊 Estatísticas do GitHub
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=BrunnoG92&show_icons=true&theme=dark&hide_border=true" alt="GitHub Stats" height="180em" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=BrunnoG92&layout=compact&theme=dark&hide_border=true" alt="Top Languages" height="180em" />
-  <br/><br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=BrunnoG92&theme=dark&hide_border=true" alt="GitHub Streak" height="180em" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=BrunnoG92&theme=dark&hide_border=true" alt="GitHub Streak" width="49%" />
 </p>
 
-### 📈 Métricas consolidadas (incluindo repositórios privados)
+### Métricas consolidadas (incluindo repositórios privados)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.totalCommits&label=Commits&labelColor=0d1117&color=58a6ff&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.totalRepos&label=Reposit%C3%B3rios&labelColor=0d1117&color=238636&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.totalStars&label=Stars&labelColor=0d1117&color=e3b341&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.totalPRs&label=Pull+Requests&labelColor=0d1117&color=8957e5&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.totalIssues&label=Issues&labelColor=0d1117&color=fa4549&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.totalFollowers&label=Seguidores&labelColor=0d1117&color=2da44e&style=for-the-badge" />
+  <a href="https://github.com/BrunnoG92">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.totalCommits&label=Commits&labelColor=0d1117&color=58a6ff&style=for-the-badge" />
+  </a>
+  <a href="https://github.com/BrunnoG92?tab=repositories">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.totalRepos&label=Reposit%C3%B3rios&labelColor=0d1117&color=238636&style=for-the-badge" />
+  </a>
+  <a href="https://github.com/BrunnoG92?tab=stars">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.totalStars&label=Stars&labelColor=0d1117&color=e3b341&style=for-the-badge" />
+  </a>
+  <a href="https://github.com/BrunnoG92?tab=followers">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.totalFollowers&label=Seguidores&labelColor=0d1117&color=2da44e&style=for-the-badge" />
+  </a>
+  <br/>
+  <a href="https://github.com/BrunnoG92?tab=repositories">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.publicRepos&label=P%C3%BAblicos&labelColor=0d1117&color=58a6ff&style=for-the-badge" />
+  </a>
+  <a href="https://github.com/BrunnoG92?tab=repositories">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.privateRepos&label=Privados&labelColor=0d1117&color=8957e5&style=for-the-badge" />
+  </a>
+  <a href="https://github.com/BrunnoG92?tab=pull-requests">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.totalPullRequests&label=Pull+Requests&labelColor=0d1117&color=8957e5&style=for-the-badge" />
+  </a>
+  <a>
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.totalIssuesCreated&label=Issues&labelColor=0d1117&color=fa4549&style=for-the-badge" />
+  </a>
 </p>
 
+### Linguagens mais utilizadas
+
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=BrunnoG92&theme=react-dark&hide_border=true&bg_color=0d1117&area=true" alt="Activity Graph" width="95%" />
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[0].name&label=1%C2%BA&labelColor=0d1117&color=58a6ff&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[0].pct&suffix=%25&label=&labelColor=58a6ff&color=0d1117&style=flat" />
+  &nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[1].name&label=2%C2%BA&labelColor=0d1117&color=58a6ff&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[1].pct&suffix=%25&label=&labelColor=58a6ff&color=0d1117&style=flat" />
+  &nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[2].name&label=3%C2%BA&labelColor=0d1117&color=58a6ff&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[2].pct&suffix=%25&label=&labelColor=58a6ff&color=0d1117&style=flat" />
+  <br/>
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[3].name&label=4%C2%BA&labelColor=0d1117&color=58a6ff&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[3].pct&suffix=%25&label=&labelColor=58a6ff&color=0d1117&style=flat" />
+  &nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[4].name&label=5%C2%BA&labelColor=0d1117&color=58a6ff&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FBrunnoG92%2FBrunnoG92%2Fmain%2F_data%2Fstats.json&query=%24.topLanguages[4].pct&suffix=%25&label=&labelColor=58a6ff&color=0d1117&style=flat" />
 </p>
+
+### Activity Graph
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=BrunnoG92&theme=react-dark&hide_border=true&bg_color=0d1117&area=true" alt="Activity Graph" width="100%" />
+</p>
+
+> 📌 As métricas consolidadas e linguagens são atualizadas automaticamente toda semana via GitHub Actions, incluindo dados de repositórios privados. Os badges dinâmicos consomem dados de `_data/stats.json` — sem exposição de tokens ou segredos.
 
 ---
 
@@ -99,7 +138,7 @@ Minha atuação com IA vai além do consumo de APIs: construo **sistemas agentiv
 |------|-----------|
 | **Agentes Inteligentes** | Assistentes com capacidade de planejamento, uso de ferramentas e tomada de decisão autônoma |
 | **Automação de Processos** | Scripts e robôs que eliminam tarefas manuais repetitivas em operações de TI e negócios |
-| **Integração com LLMs** | Engenharia de prompt, chains, RAG (Retrieval-Augmented Generation) e fine-tuning |
+| **Integração com LLMs** | Engenharia de prompt, chains, RAG e fine-tuning para cenários corporativos |
 | **Análise Inteligente** | Extração, classificação e sumarização automatizada de documentos e dados não estruturados |
 
 ---
@@ -155,7 +194,7 @@ Minha atuação com IA vai além do consumo de APIs: construo **sistemas agentiv
   <a href="https://t.me/BrunnoG92">
     <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
   </a>
-  <a href="mailto:brunnogomes.dev@gmail.com">
+  <a href="mailto:brunnoGonçalves.dev@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
 </p>

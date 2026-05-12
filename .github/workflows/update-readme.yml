@@ -1,10 +1,9 @@
-name: Update Profile README
+name: Update GitHub Stats Data
 
 on:
   push:
     branches: [main]
     paths:
-      - ".github/README.template.md"
       - ".github/workflows/update-readme.yml"
   schedule:
     - cron: "0 6 * * 1"
@@ -39,11 +38,13 @@ jobs:
                 repositories(privacy: ALL, first: 100, ownerAffiliations: OWNER) {
                   totalCount
                   nodes {
+                    name
                     stargazerCount
                     forkCount
                     isPrivate
                     isFork
                     primaryLanguage { name }
+                    languages(first: 10) { totalSize }
                   }
                 }
                 followers { totalCount }
@@ -57,57 +58,85 @@ jobs:
           node -e "
             const raw = require('./_data/raw-stats.json');
             const u = raw.data.user;
+            const fs = require('fs');
 
-            let stars = 0, forks = 0, langCount = {};
+            const langColors = {
+              'C#': '239120', 'TypeScript': '3178C6', 'JavaScript': 'F7DF1E',
+              'Python': '3776AB', 'HTML': 'E34F26', 'CSS': '1572B6',
+              'Shell': '89E051', 'Dockerfile': '384D54', 'Kotlin': 'A97BFF',
+              'Java': 'B07219', 'Go': '00ADD8', 'Rust': 'DEA584',
+              'PHP': '4F5D95', 'Ruby': '701516', 'Swift': 'F05138',
+              'Dart': '00B4AB', 'SCSS': 'C6538C', 'Less': '1D365D',
+              'Vue': '4FC08D', 'Svelte': 'FF3E00',
+            };
+
+            let stars = 0, forks = 0, publicRepos = 0, privateRepos = 0;
+            let langCount = {}, langBytes = {};
+
             (u.repositories.nodes || []).forEach(r => {
               if (!r.isFork) {
                 stars += r.stargazerCount;
                 forks += r.forkCount;
               }
-              if (r.primaryLanguage) {
-                const lang = r.primaryLanguage.name;
-                langCount[lang] = (langCount[lang] || 0) + 1;
+              if (r.isPrivate) privateRepos++;
+              else publicRepos++;
+
+              if (r.languages && r.languages.totalSize > 0) {
+                // Usar totalSize como peso da linguagem principal
+                if (r.primaryLanguage) {
+                  const lang = r.primaryLanguage.name;
+                  langBytes[lang] = (langBytes[lang] || 0) + r.languages.totalSize;
+                }
               }
             });
 
-            const topLangs = Object.entries(langCount)
+            // Top linguagens por bytes
+            const topLangs = Object.entries(langBytes)
               .sort((a, b) => b[1] - a[1])
               .slice(0, 5)
-              .map(([name, count]) => ({ name, count }));
+              .map(([name, bytes]) => ({
+                name,
+                bytes,
+                color: langColors[name] || '6e7681'
+              }));
 
-            fs = require('fs');
-            fs.writeFileSync('./_data/stats.json', JSON.stringify({
+            const totalBytes = topLangs.reduce((s, l) => s + l.bytes, 0);
+            const langWithPct = topLangs.map(l => ({
+              ...l,
+              pct: totalBytes > 0 ? Math.round((l.bytes / totalBytes) * 100) : 0
+            }));
+
+            const data = {
               updatedAt: new Date().toISOString(),
               totalCommits: u.contributionsCollection.totalCommitContributions,
               totalPRs: u.contributionsCollection.totalPullRequestContributions,
               totalIssues: u.contributionsCollection.totalIssueContributions,
               totalReviews: u.contributionsCollection.totalPullRequestReviewContributions,
               totalRepos: u.repositories.totalCount,
+              publicRepos,
+              privateRepos,
               totalStars: stars,
               totalForks: forks,
               totalFollowers: u.followers.totalCount,
               totalFollowing: u.following.totalCount,
               totalPullRequests: u.pullRequests.totalCount,
               totalIssuesCreated: u.issues.totalCount,
-              topLanguages: topLangs
-            }, null, 2) + '\n');
+              topLanguages: langWithPct
+            };
 
+            fs.writeFileSync('./_data/stats.json', JSON.stringify(data, null, 2) + '\n');
             fs.unlinkSync('./_data/raw-stats.json');
-            console.log('Stats generated successfully');
+            console.log('Stats generated:', JSON.stringify(data, null, 2));
           "
 
-      - name: Generate README from template
-        run: |
-          cp .github/README.template.md README.md
-
-      - name: Commit updated files
+      - name: Commit updated stats
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md _data/stats.json
+          git add _data/stats.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: update profile README and stats [skip ci]"
+            git commit -m "chore: update stats data [skip ci]"
             git push
           fi
