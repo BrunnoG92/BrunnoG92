@@ -120,6 +120,7 @@ function generateStatsCard(data) {
   data.topLanguages.forEach((lang, i) => {
     const y = 125 + i * 30;
     const fillW = Math.round(barMaxW * lang.pct / 100);
+    const fillEndX = 115 + fillW;
     const bar = lang.pct > 0
       ? `<rect x="115" y="${y + 2}" width="${fillW}" height="18" rx="4" fill="#${lang.color}" />`
       : '';
@@ -127,7 +128,7 @@ function generateStatsCard(data) {
     <text x="15" y="${y + 15}" fill="#c9d1d9" font-size="13" font-family="system-ui" font-weight="600">${lang.name}</text>
     <rect x="115" y="${y + 2}" width="${barMaxW}" height="18" rx="4" fill="#21262d" />
     ${bar}
-    <text x="500" y="${y + 15}" fill="#8b949e" font-size="13" font-family="system-ui" text-anchor="end">${lang.pct}%</text>`;
+    <text x="${fillEndX + 5}" y="${y + 15}" fill="#8b949e" font-size="13" font-family="system-ui">${lang.pct}%</text>`;
   });
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" style="background:#0d1117;border-radius:6px">
