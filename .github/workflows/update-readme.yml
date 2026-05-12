@@ -1,0 +1,113 @@
+name: Update Profile README
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/README.template.md"
+      - ".github/workflows/update-readme.yml"
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GIT_STATICS }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch stats via GitHub GraphQL API
+        run: |
+          mkdir -p _data
+
+          gh api graphql --field login='BrunnoG92' -f query='
+            query($login: String!) {
+              user(login: $login) {
+                contributionsCollection(from: "2010-01-01T00:00:00Z", to: "2026-12-31T23:59:59Z") {
+                  totalCommitContributions
+                  totalPullRequestContributions
+                  totalIssueContributions
+                  totalPullRequestReviewContributions
+                }
+                repositories(privacy: ALL, first: 100, ownerAffiliations: OWNER) {
+                  totalCount
+                  nodes {
+                    stargazerCount
+                    forkCount
+                    isPrivate
+                    isFork
+                    primaryLanguage { name }
+                  }
+                }
+                followers { totalCount }
+                following { totalCount }
+                pullRequests(first: 1) { totalCount }
+                issues(first: 1) { totalCount }
+              }
+            }
+          ' > _data/raw-stats.json
+
+          node -e "
+            const raw = require('./_data/raw-stats.json');
+            const u = raw.data.user;
+
+            let stars = 0, forks = 0, langCount = {};
+            (u.repositories.nodes || []).forEach(r => {
+              if (!r.isFork) {
+                stars += r.stargazerCount;
+                forks += r.forkCount;
+              }
+              if (r.primaryLanguage) {
+                const lang = r.primaryLanguage.name;
+                langCount[lang] = (langCount[lang] || 0) + 1;
+              }
+            });
+
+            const topLangs = Object.entries(langCount)
+              .sort((a, b) => b[1] - a[1])
+              .slice(0, 5)
+              .map(([name, count]) => ({ name, count }));
+
+            fs = require('fs');
+            fs.writeFileSync('./_data/stats.json', JSON.stringify({
+              updatedAt: new Date().toISOString(),
+              totalCommits: u.contributionsCollection.totalCommitContributions,
+              totalPRs: u.contributionsCollection.totalPullRequestContributions,
+              totalIssues: u.contributionsCollection.totalIssueContributions,
+              totalReviews: u.contributionsCollection.totalPullRequestReviewContributions,
+              totalRepos: u.repositories.totalCount,
+              totalStars: stars,
+              totalForks: forks,
+              totalFollowers: u.followers.totalCount,
+              totalFollowing: u.following.totalCount,
+              totalPullRequests: u.pullRequests.totalCount,
+              totalIssuesCreated: u.issues.totalCount,
+              topLanguages: topLangs
+            }, null, 2) + '\n');
+
+            fs.unlinkSync('./_data/raw-stats.json');
+            console.log('Stats generated successfully');
+          "
+
+      - name: Generate README from template
+        run: |
+          cp .github/README.template.md README.md
+
+      - name: Commit updated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md _data/stats.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update profile README and stats [skip ci]"
+            git push
+          fi
