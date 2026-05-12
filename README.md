@@ -143,27 +143,58 @@ Minha atuação com IA vai além do consumo de APIs: construo **sistemas agentiv
 
 ---
 
-## 📦 Projetos & Contribuições
+## 📦 OLTMonitorV2 — Sistema Enterprise de Monitoramento Óptico
 
-> Muitos dos meus projetos são **corporativos/confidenciais** e não estão disponíveis publicamente. Abaixo, uma curadoria do que posso compartilhar.
+> Repositório privado · [Acessar](https://github.com/BrunnoG92/OLTMonitorV2)
 
-### 🔧 Automação & Bots
-| Projeto | Descrição |
-|---------|-----------|
-| `(privado)` | Pipeline de automação de deploy com IA para validação de releases |
-| `(privado)` | Bot inteligente para triagem e resposta em tickets de suporte |
+Sistema enterprise de **monitoramento e provisionamento de equipamentos de rede óptica (OLTs)** com suporte a múltiplos fabricantes, utilizado por múltiplas empresas simultaneamente.
 
-### 🌐 APIs & Integrações
-| Projeto | Descrição |
-|---------|-----------|
-| `(privado)` | API Gateway corporativo com orquestração de microsserviços |
-| `(privado)` | Middleware de integração entre sistemas legados e modernos |
+### 🏗️ Arquitetura
 
-### 🏗️ Sistemas Corporativos
-| Projeto | Descrição |
-|---------|-----------|
-| `(privado)` | Plataforma de gestão empresarial com arquitetura em camadas |
-| `(privado)` | Sistema de analytics com dashboards em tempo real |
+```
+Frontend (Angular 21)         Backend (.NET 10)
+     │                              │
+     │   OLTMonitorAngular          │  OLTMonitorV3 (Clean Architecture)
+     │   OLTMonitorAstro            │  OLTMonitorV4 (em desenvolvimento)
+     │                              │
+     └────────── API REST ──────────┘
+                    │
+          ┌─────────┴─────────┐
+          │   Drivers de      │
+          │   Fabricantes     │
+          │   (plugáveis)     │
+          └───────────────────┘
+```
+
+### 🔐 Modelo Multi-Tenant
+
+| Perfil | Acesso |
+|--------|--------|
+| **Empresa Master** | Acesso total a todos os equipamentos e dados |
+| **Empresa Parceira** | Acesso restrito apenas aos seus próprios equipamentos |
+
+O sistema implementa módulos de segurança que garantem que dados sensíveis e estratégicos **não vazem entre empresas**, atendendo integralmente à **LGPD**.
+
+### ⚙️ Funcionalidades
+
+- Monitoramento em tempo real de ONUs (unidades terminais ópticas)
+- Provisionamento automatizado de equipamentos
+- Coleta de métricas ópticas e indicadores de desempenho
+- Sincronização de configurações entre OLTs
+- Drivers plugáveis que abstraem diferenças entre fabricantes
+- Isolamento de dados por tenant para compliance
+
+### 🛠️ Stack
+
+<p align="left">
+  <img src="https://img.shields.io/badge/.NET%2010-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
+  <img src="https://img.shields.io/badge/Angular%2021-0F0F11?style=for-the-badge&logo=angular&logoColor=white" />
+  <img src="https://img.shields.io/badge/Clean%20Architecture-6e7681?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/DDD-6e7681?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/CQRS-6e7681?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Multi--Tenant-58a6ff?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/LGPD-238636?style=for-the-badge" />
+</p>
 
 ---
 
