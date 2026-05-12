@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="200" viewBox="0 0 480 200" style="background:#0d1117;border-radius:6px">
+  <rect width="480" height="200" fill="#0d1117" rx="6" />
+  <text x="20" y="18" fill="#58a6ff" font-size="14" font-weight="bold" font-family="system-ui">📊 GitHub Stats</text>
+  
+    <text x="20" y="30" fill="#8b949e" font-size="11" font-family="system-ui">Commits</text>
+    <text x="20" y="48" fill="#c9d1d9" font-size="20" font-weight="bold" font-family="system-ui">3000</text>
+    <text x="175" y="30" fill="#8b949e" font-size="11" font-family="system-ui">Repositórios</text>
+    <text x="175" y="48" fill="#c9d1d9" font-size="20" font-weight="bold" font-family="system-ui">9</text>
+    <text x="330" y="30" fill="#8b949e" font-size="11" font-family="system-ui">Stars</text>
+    <text x="330" y="48" fill="#c9d1d9" font-size="20" font-weight="bold" font-family="system-ui">3</text>
+    <text x="20" y="70" fill="#8b949e" font-size="11" font-family="system-ui">Seguidores</text>
+    <text x="20" y="88" fill="#c9d1d9" font-size="20" font-weight="bold" font-family="system-ui">3</text>
+    <text x="175" y="70" fill="#8b949e" font-size="11" font-family="system-ui">Pull Requests</text>
+    <text x="175" y="88" fill="#c9d1d9" font-size="20" font-weight="bold" font-family="system-ui">2</text>
+  <text x="20" y="118" fill="#58a6ff" font-size="13" font-weight="bold" font-family="system-ui">Linguagens</text>
+  
+    <text x="20" y="125" fill="#c9d1d9" font-size="13" font-family="system-ui">C#</text>
+    <text x="310" y="125" fill="#8b949e" font-size="13" font-family="system-ui">93%</text>
+    <rect x="20" y="129" width="280" height="8" rx="4" fill="#21262d" />
+    <rect x="20" y="129" width="260" height="8" rx="4" fill="#239120" />
+    <text x="20" y="153" fill="#c9d1d9" font-size="13" font-family="system-ui">TypeScript</text>
+    <text x="310" y="153" fill="#8b949e" font-size="13" font-family="system-ui">3%</text>
+    <rect x="20" y="157" width="280" height="8" rx="4" fill="#21262d" />
+    <rect x="20" y="157" width="8" height="8" rx="4" fill="#3178C6" />
+    <text x="20" y="181" fill="#c9d1d9" font-size="13" font-family="system-ui">Python</text>
+    <text x="310" y="181" fill="#8b949e" font-size="13" font-family="system-ui">2%</text>
+    <rect x="20" y="185" width="280" height="8" rx="4" fill="#21262d" />
+    <rect x="20" y="185" width="6" height="8" rx="4" fill="#3776AB" />
+    <text x="20" y="209" fill="#c9d1d9" font-size="13" font-family="system-ui">JavaScript</text>
+    <text x="310" y="209" fill="#8b949e" font-size="13" font-family="system-ui">1%</text>
+    <rect x="20" y="213" width="280" height="8" rx="4" fill="#21262d" />
+    <rect x="20" y="213" width="3" height="8" rx="4" fill="#F7DF1E" />
+    <text x="20" y="237" fill="#c9d1d9" font-size="13" font-family="system-ui">Mermaid</text>
+    <text x="310" y="237" fill="#8b949e" font-size="13" font-family="system-ui">0%</text>
+    <rect x="20" y="241" width="280" height="8" rx="4" fill="#21262d" />
+    <rect x="20" y="241" width="0" height="8" rx="4" fill="#6e7681" />
+</svg>
