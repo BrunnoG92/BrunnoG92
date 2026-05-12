@@ -35,7 +35,7 @@ jobs:
                   totalIssueContributions
                   totalPullRequestReviewContributions
                 }
-                repositories(privacy: ALL, first: 100, ownerAffiliations: OWNER) {
+                repositories(first: 100, ownerAffiliations: OWNER) {
                   totalCount
                   nodes {
                     name
