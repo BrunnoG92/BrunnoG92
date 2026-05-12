@@ -121,8 +121,6 @@ foco_atual:
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=BrunnoG92&theme=react-dark&hide_border=true&bg_color=0d1117&area=true" alt="Activity Graph" width="100%" />
 </p>
 
-> 📌 As métricas consolidadas e linguagens são atualizadas automaticamente toda semana via GitHub Actions, incluindo dados de repositórios privados. Os badges dinâmicos consomem dados de `_data/stats.json` — sem exposição de tokens ou segredos.
-
 ---
 
 ## 🤖 Inteligência Artificial & Automação

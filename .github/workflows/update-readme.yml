@@ -58,6 +58,13 @@ jobs:
             const u = raw.data.user;
             const fs = require('fs');
 
+            // Apenas repositórios ativos em desenvolvimento
+            const activeRepos = [
+              'OLTMonitorV2', 'MCPs-TRP', 'Script-Fortics---Tampermonkey',
+              'ComunicaoTropical', 'ZabbixMCPTropicalNet', 'AutomacaoComissoes2.0',
+              'ChatHubosoft3', 'FluxoAtendimentoChat', 'FluxoChat'
+            ];
+
             const langColors = {
               'C#': '239120', 'TypeScript': '3178C6', 'JavaScript': 'F7DF1E',
               'Python': '3776AB', 'HTML': 'E34F26', 'CSS': '1572B6',
@@ -68,10 +75,13 @@ jobs:
               'Vue': '4FC08D', 'Svelte': 'FF3E00',
             };
 
-            let stars = 0, forks = 0, publicRepos = 0, privateRepos = 0;
-            let langCount = {}, langBytes = {};
+            const repos = (u.repositories.nodes || [])
+              .filter(r => activeRepos.includes(r.name));
 
-            (u.repositories.nodes || []).forEach(r => {
+            let stars = 0, forks = 0, publicRepos = 0, privateRepos = 0;
+            let langBytes = {};
+
+            repos.forEach(r => {
               if (!r.isFork) {
                 stars += r.stargazerCount;
                 forks += r.forkCount;
@@ -79,16 +89,12 @@ jobs:
               if (r.isPrivate) privateRepos++;
               else publicRepos++;
 
-              if (r.languages && r.languages.totalSize > 0) {
-                // Usar totalSize como peso da linguagem principal
-                if (r.primaryLanguage) {
-                  const lang = r.primaryLanguage.name;
-                  langBytes[lang] = (langBytes[lang] || 0) + r.languages.totalSize;
-                }
+              if (r.languages && r.languages.totalSize > 0 && r.primaryLanguage) {
+                const lang = r.primaryLanguage.name;
+                langBytes[lang] = (langBytes[lang] || 0) + r.languages.totalSize;
               }
             });
 
-            // Top linguagens por bytes
             const topLangs = Object.entries(langBytes)
               .sort((a, b) => b[1] - a[1])
               .slice(0, 5)
@@ -110,7 +116,7 @@ jobs:
               totalPRs: u.contributionsCollection.totalPullRequestContributions,
               totalIssues: u.contributionsCollection.totalIssueContributions,
               totalReviews: u.contributionsCollection.totalPullRequestReviewContributions,
-              totalRepos: u.repositories.totalCount,
+              totalRepos: repos.length,
               publicRepos,
               privateRepos,
               totalStars: stars,
@@ -124,7 +130,7 @@ jobs:
 
             fs.writeFileSync('./_data/stats.json', JSON.stringify(data, null, 2) + '\n');
             fs.unlinkSync('./_data/raw-stats.json');
-            console.log('Stats generated:', JSON.stringify(data, null, 2));
+            console.log('Stats generated (active repos only):', JSON.stringify(data, null, 2));
           "
 
       - name: Commit updated stats
