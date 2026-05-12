@@ -94,8 +94,9 @@ function generateActivityGraph(user) {
 // ─── Stats Card SVG ────────────────────────────────────────────────
 
 function generateStatsCard(data) {
-  const w = 480, h = 200;
+  const w = 460, h = 280;
 
+  // Top stats row
   const items = [
     { label: 'Commits', value: data.totalCommits, color: '#58a6ff' },
     { label: 'Repositórios', value: data.totalRepos, color: '#238636' },
@@ -104,35 +105,37 @@ function generateStatsCard(data) {
     { label: 'Pull Requests', value: data.totalPullRequests, color: '#8957e5' },
   ];
 
-  const langBar = (name, pct, color, y) => {
-    const barW = 280;
-    const fillW = Math.round(barW * pct / 100);
-    return `
-    <text x="20" y="${y}" fill="#c9d1d9" font-size="13" font-family="system-ui">${name}</text>
-    <text x="${barW + 30}" y="${y}" fill="#8b949e" font-size="13" font-family="system-ui">${pct}%</text>
-    <rect x="20" y="${y + 4}" width="${barW}" height="8" rx="4" fill="#21262d" />
-    <rect x="20" y="${y + 4}" width="${fillW}" height="8" rx="4" fill="#${color}" />`;
-  };
-
   let statsRow = '';
   items.forEach((item, i) => {
-    const x = 20 + (i % 3) * 155;
-    const y = 30 + Math.floor(i / 3) * 40;
+    const x = 15 + (i % 3) * 150;
+    const y = 35 + Math.floor(i / 3) * 42;
     statsRow += `
     <text x="${x}" y="${y}" fill="#8b949e" font-size="11" font-family="system-ui">${item.label}</text>
     <text x="${x}" y="${y + 18}" fill="#c9d1d9" font-size="20" font-weight="bold" font-family="system-ui">${item.value}</text>`;
   });
 
+  // Language bars - estilo horizontal comprido
+  const barMaxW = 380;
   let langsHtml = '';
   data.topLanguages.forEach((lang, i) => {
-    langsHtml += langBar(lang.name, lang.pct, lang.color, 125 + i * 28);
+    const y = 125 + i * 30;
+    const fillW = Math.round(barMaxW * lang.pct / 100);
+    const bar = lang.pct > 0
+      ? `<rect x="115" y="${y + 2}" width="${fillW}" height="18" rx="4" fill="#${lang.color}" />`
+      : '';
+    langsHtml += `
+    <text x="15" y="${y + 15}" fill="#c9d1d9" font-size="13" font-family="system-ui" font-weight="600">${lang.name}</text>
+    <rect x="115" y="${y + 2}" width="${barMaxW}" height="18" rx="4" fill="#21262d" />
+    ${bar}
+    <text x="505" y="${y + 15}" fill="#8b949e" font-size="13" font-family="system-ui" text-anchor="end">${lang.pct}%</text>`;
   });
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" style="background:#0d1117;border-radius:6px">
   <rect width="${w}" height="${h}" fill="#0d1117" rx="6" />
-  <text x="20" y="18" fill="#58a6ff" font-size="14" font-weight="bold" font-family="system-ui">📊 GitHub Stats</text>
+  <text x="15" y="20" fill="#58a6ff" font-size="14" font-weight="bold" font-family="system-ui">📊 GitHub Stats</text>
   ${statsRow}
-  <text x="20" y="118" fill="#58a6ff" font-size="13" font-weight="bold" font-family="system-ui">Linguagens</text>
+  <line x1="15" y1="115" x2="${w - 15}" y2="115" stroke="#21262d" stroke-width="1" />
+  <text x="15" y="108" fill="#8b949e" font-size="11" font-family="system-ui">LINGUAGENS</text>
   ${langsHtml}
 </svg>`;
 }
