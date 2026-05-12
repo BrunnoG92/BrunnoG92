@@ -33,9 +33,9 @@ filosofia:
   codigo: "Código é projeto de engenharia — cada camada deve ter uma responsabilidade única, ser testável e evolutiva."
   mentalidade: "Automação não é luxo, é pré-requisito. Se você faz duas vezes, automatize na terceira."
 foco_atual:
-  - Arquitetura de sistemas distribuídos e microsserviços
-  - Automação de operações com IA
-  - Performance e escalabilidade em aplicações corporativas
+  - Desenvolvimento do OLTMonitorV2 (monitoramento óptico enterprise)
+  - Arquitetura multi-tenant com isolamento LGPD
+  - .NET 10 + Angular 21 + Clean Architecture / DDD / CQRS
   - Integração de LLMs em fluxos de produção reais
 ```
 
@@ -53,12 +53,9 @@ foco_atual:
   <img src="https://img.shields.io/badge/RxJS-B7178C?style=for-the-badge&logo=reactivex&logoColor=white" />
   <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" />
   <img src="https://img.shields.io/badge/PostgreSQL-47A248?style=for-the-badge&logo=PostgreSQL&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white" />
 </p>
 
 ---
@@ -143,48 +140,33 @@ Minha atuação com IA vai além do consumo de APIs: construo **sistemas agentiv
 
 ---
 
-## 📦 OLTMonitorV2 — Sistema Enterprise de Monitoramento Óptico
+## 🧭 Atualmente estou trabalhando em
 
-> Repositório privado · [Acessar](https://github.com/BrunnoG92/OLTMonitorV2)
+### OLTMonitorV2 — Sistema Enterprise de Monitoramento Óptico
 
 Sistema enterprise de **monitoramento e provisionamento de equipamentos de rede óptica (OLTs)** com suporte a múltiplos fabricantes, utilizado por múltiplas empresas simultaneamente.
 
-### 🏗️ Arquitetura
-
 ```
-Frontend (Angular 21)         Backend (.NET 10)
-     │                              │
-     │   OLTMonitorAngular          │  OLTMonitorV3 (Clean Architecture)
-     │   OLTMonitorAstro            │  OLTMonitorV4 (em desenvolvimento)
-     │                              │
-     └────────── API REST ──────────┘
-                    │
-          ┌─────────┴─────────┐
-          │   Drivers de      │
-          │   Fabricantes     │
-          │   (plugáveis)     │
-          └───────────────────┘
+Frontend (Angular 21)              Backend (.NET 10)
+       │                                │
+       │                                │  Clean Architecture + DDD + CQRS
+       │                                │
+       └───────── API REST ─────────────┘
+                      │
+            ┌─────────┴─────────┐
+            │   Drivers de      │
+            │   Fabricantes     │
+            │   (plugáveis)     │
+            └───────────────────┘
 ```
 
-### 🔐 Modelo Multi-Tenant
+**Modelo Multi-Tenant:**
+- **Empresa Master** — Acesso total a todos os equipamentos e dados
+- **Empresa Parceira** — Acesso restrito apenas aos seus próprios equipamentos
 
-| Perfil | Acesso |
-|--------|--------|
-| **Empresa Master** | Acesso total a todos os equipamentos e dados |
-| **Empresa Parceira** | Acesso restrito apenas aos seus próprios equipamentos |
+Isolamento de dados por tenant com segurança LGPD — dados sensíveis e estratégicos não vazam entre empresas.
 
-O sistema implementa módulos de segurança que garantem que dados sensíveis e estratégicos **não vazem entre empresas**, atendendo integralmente à **LGPD**.
-
-### ⚙️ Funcionalidades
-
-- Monitoramento em tempo real de ONUs (unidades terminais ópticas)
-- Provisionamento automatizado de equipamentos
-- Coleta de métricas ópticas e indicadores de desempenho
-- Sincronização de configurações entre OLTs
-- Drivers plugáveis que abstraem diferenças entre fabricantes
-- Isolamento de dados por tenant para compliance
-
-### 🛠️ Stack
+**Funcionalidades:** Monitoramento em tempo real de ONUs · Provisionamento automatizado · Métricas ópticas · Sincronização de configurações · Drivers plugáveis por fabricante
 
 <p align="left">
   <img src="https://img.shields.io/badge/.NET%2010-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
@@ -195,24 +177,6 @@ O sistema implementa módulos de segurança que garantem que dados sensíveis e 
   <img src="https://img.shields.io/badge/Multi--Tenant-58a6ff?style=for-the-badge" />
   <img src="https://img.shields.io/badge/LGPD-238636?style=for-the-badge" />
 </p>
-
----
-
-## 🧭 Foco Atual
-
-<div align="center">
-
-[![Arquitetura](https://img.shields.io/badge/Foco-Arquitetura_de_Sistemas-58a6ff?style=for-the-badge)]()
-[![Automação](https://img.shields.io/badge/Foco-Automação_com_IA-238636?style=for-the-badge)]()
-[![Performance](https://img.shields.io/badge/Foco-Performance_&_Escalabilidade-e3b341?style=for-the-badge)]()
-[![IA](https://img.shields.io/badge/Foco-IA_Aplicada-412991?style=for-the-badge)]()
-
-</div>
-
-- 🔭 **Arquitetando** soluções escaláveis com .NET + Angular
-- 🌱 **Aprofundando** em sistemas multi-agente com LLMs
-- 👯 **Explorando** padrões de resiliência e observabilidade em produção
-- 💬 **Disponível** para discutir arquitetura, automação e IA aplicada
 
 ---
 
