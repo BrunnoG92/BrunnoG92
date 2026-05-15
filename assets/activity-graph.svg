@@ -387,9 +387,10 @@
     <rect x="835" y="70" width="13" height="13" rx="3" fill="rgb(24,52,88)" />
     <rect x="835" y="85" width="13" height="13" rx="3" fill="rgb(19,38,59)" />
     <rect x="835" y="100" width="13" height="13" rx="3" fill="rgb(18,36,54)" />
+    <rect x="835" y="115" width="13" height="13" rx="3" fill="rgb(18,36,54)" />
 
   <text x="12" y="170" fill="#8b949e" font-size="11" font-family="system-ui">
-    3052 contribuições nos últimos 12 meses
+    3056 contribuições nos últimos 12 meses
   </text>
   <text x="835" y="170" fill="#58a6ff" font-size="11" font-family="system-ui" text-anchor="end">
     Menos
