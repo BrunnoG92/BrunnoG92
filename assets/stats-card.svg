@@ -3,13 +3,13 @@
   <text x="15" y="20" fill="#58a6ff" font-size="14" font-weight="bold" font-family="system-ui">📊 GitHub Stats</text>
   
     <text x="15" y="35" fill="#8b949e" font-size="11" font-family="system-ui">Commits</text>
-    <text x="15" y="53" fill="#c9d1d9" font-size="20" font-weight="bold" font-family="system-ui">3053</text>
+    <text x="15" y="53" fill="#c9d1d9" font-size="20" font-weight="bold" font-family="system-ui">3055</text>
     <text x="185" y="35" fill="#8b949e" font-size="11" font-family="system-ui">Repositórios</text>
     <text x="185" y="53" fill="#c9d1d9" font-size="20" font-weight="bold" font-family="system-ui">9</text>
     <text x="355" y="35" fill="#8b949e" font-size="11" font-family="system-ui">Stars</text>
     <text x="355" y="53" fill="#c9d1d9" font-size="20" font-weight="bold" font-family="system-ui">3</text>
     <text x="15" y="77" fill="#8b949e" font-size="11" font-family="system-ui">Seguidores</text>
-    <text x="15" y="95" fill="#c9d1d9" font-size="20" font-weight="bold" font-family="system-ui">4</text>
+    <text x="15" y="95" fill="#c9d1d9" font-size="20" font-weight="bold" font-family="system-ui">5</text>
     <text x="185" y="77" fill="#8b949e" font-size="11" font-family="system-ui">Pull Requests</text>
     <text x="185" y="95" fill="#c9d1d9" font-size="20" font-weight="bold" font-family="system-ui">3</text>
   <line x1="15" y1="115" x2="515" y2="115" stroke="#21262d" stroke-width="1" />
@@ -21,8 +21,8 @@
     <text x="464" y="140" fill="#8b949e" font-size="13" font-family="system-ui">93%</text>
     <text x="15" y="170" fill="#c9d1d9" font-size="13" font-family="system-ui" font-weight="600">TypeScript</text>
     <rect x="115" y="157" width="370" height="18" rx="4" fill="#21262d" />
-    <rect x="115" y="157" width="11" height="18" rx="4" fill="#3178C6" />
-    <text x="131" y="170" fill="#8b949e" font-size="13" font-family="system-ui">3%</text>
+    <rect x="115" y="157" width="15" height="18" rx="4" fill="#3178C6" />
+    <text x="135" y="170" fill="#8b949e" font-size="13" font-family="system-ui">4%</text>
     <text x="15" y="200" fill="#c9d1d9" font-size="13" font-family="system-ui" font-weight="600">Python</text>
     <rect x="115" y="187" width="370" height="18" rx="4" fill="#21262d" />
     <rect x="115" y="187" width="7" height="18" rx="4" fill="#3776AB" />
