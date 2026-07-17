@@ -3,7 +3,7 @@
   <text x="15" y="20" fill="#58a6ff" font-size="14" font-weight="bold" font-family="system-ui">📊 GitHub Stats</text>
   
     <text x="15" y="35" fill="#8b949e" font-size="11" font-family="system-ui">Commits</text>
-    <text x="15" y="53" fill="#c9d1d9" font-size="20" font-weight="bold" font-family="system-ui">3271</text>
+    <text x="15" y="53" fill="#c9d1d9" font-size="20" font-weight="bold" font-family="system-ui">3365</text>
     <text x="185" y="35" fill="#8b949e" font-size="11" font-family="system-ui">Repositórios</text>
     <text x="185" y="53" fill="#c9d1d9" font-size="20" font-weight="bold" font-family="system-ui">9</text>
     <text x="355" y="35" fill="#8b949e" font-size="11" font-family="system-ui">Stars</text>
@@ -17,8 +17,8 @@
   
     <text x="15" y="140" fill="#c9d1d9" font-size="13" font-family="system-ui" font-weight="600">C#</text>
     <rect x="115" y="127" width="370" height="18" rx="4" fill="#21262d" />
-    <rect x="115" y="127" width="329" height="18" rx="4" fill="#239120" />
-    <text x="449" y="140" fill="#8b949e" font-size="13" font-family="system-ui">89%</text>
+    <rect x="115" y="127" width="333" height="18" rx="4" fill="#239120" />
+    <text x="453" y="140" fill="#8b949e" font-size="13" font-family="system-ui">90%</text>
     <text x="15" y="170" fill="#c9d1d9" font-size="13" font-family="system-ui" font-weight="600">TypeScript</text>
     <rect x="115" y="157" width="370" height="18" rx="4" fill="#21262d" />
     <rect x="115" y="157" width="19" height="18" rx="4" fill="#3178C6" />
